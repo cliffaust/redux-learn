@@ -1,8 +1,8 @@
-const BUY_CAKE = "BUY_CAKE";
+const USERNAME = "USERNAME";
 
 function buyCake() {
   return {
-    type: BUY_CAKE,
+    type: USERNAME,
     info: "first redux action",
   };
 }
@@ -13,7 +13,7 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case BUY_CAKE:
+    case USERNAME:
       return {
         ...state,
         numOfCake: state.numOfCake - 1,
